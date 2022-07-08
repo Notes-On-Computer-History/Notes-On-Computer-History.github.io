@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-        <!--
+        <!-- Colors:
             #a8c5d3
             #354a53
             #98afba
@@ -18,17 +18,56 @@
         <style>
             body{
                 color: #354a53;
-                background-color: #a8c5d3;
+                //background-color: #a8c5d3;
             }
 
             #header{
                 text-align: center;
+            }
+
+            hr{
+               border: 1px solid #98afba;
+            }
+
+            nav, footer{
+                background-color: #98afba;
+            }
+
+            nav li > a{
+                color: #354a53;
+            }
+
+            .cover{
+                height: 350px;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 5px double #98afba;
             }
         </style>
     </head>
 
     <body>
         <div class="container">
+            <nav class="navbar navbar-light bg-light navbar-fixed-top">
+                <a class="navbar-brand" href="#">Notes on Computer History</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <br/><br/>
+
             <div class="row">
                 <div class="col-md-12" id="header">
                     <h1>Notes on Computer History</h1>
@@ -37,27 +76,38 @@
             </div>
 
             <div class="row" id="covers">
-                <div class="col-md-3">
-                    <a><img src="ex.jpg"></a>
-                </div>
-
-                <div class="col-md-3">
-                    <a><img src="ex.jpg"></a>
-                </div>
-
-                <div class="col-md-3">
-                    <a><img src="ex.jpg"></a>
-                </div>
-
-                <div class="col-md-3">
-                    <a><img src="ex.jpg"></a>
+                <div class="col-md-12">
+                    <a><img class="cover" src="ex.png"></a>
                 </div>
             </div>
 
             <div class="row">
+                <hr id="about">
+
+                <h3>About</h3>
+                <p>
+                   The history of computing is important. Everywhere computers show up they create some kind of change. I'm not even talking digital machines, long before computers hummed away on every desktop in the world big geared monsters were churning out firing figures. You can't understand the current digital landscape without a grasp of the past. And you can't grasp at that past without some kind of chronicle.
+                </p>
+    
+                <p>
+                    I think we are at a perfect point in time to start putting together that chronicle. Digital machines, the devices that changed the world, are less than a hundred years old. We have just enough space between us and the first computers that we can start to look at them in the historical perspective. By that same token, we are close enough that few sources have been lost. Recounting the tales of computing's past is much easier than digging up bones.
+                </p>
+    
+                <p>
+                    There's a huge opportunity here for anyone to get in on the action. I want this publication to serve as an outlet for those curious about the creation of the transistor, who want to learn how we first etched silicon, or who are fascinated by a semi-colon. There are a lot of questions we can ask about the development of computing technology, and right now there are a lot of fantastic ways to answer those questions. I think we have a responsibility to future generations to gather together those answers while sources are still easy to get our hands on. I believe that community-driven history can be a powerful force, one that we should harness.
+                </p>
+    
+                <p>
+                    This is all my way to say: write in! Find something that puzzles you, pick a question, and then answer it. Go to a university library and pester some archivists. Take something apart and document it's guts. Dig up a book no one has read in decades... then write everything down and send it in! If we work together we can create something truly powerful. Maybe we can keep a few stories from slipping away.
+                </p>
+            </div>
+
+            <div class="row">
+                <hr id="faq">
+
                 <h3>What is Notes on Computer History?</h3>
                 <p>
-                    Notes on Computer Hisotry(NoCH for short) is a community driven outlet for saccessible scholorship on computer history. That's a longwinded way to say that NoCH is a place for anyone to write about topics in computer history. The aim of this publication is to get more people discussing and researching the origins of our digital world.
+                    Notes on Computer Hisotry(NoCH for short) is a community driven outlet for accessible scholorship on computer history. NoCH is a place for anyone to write about topics in computer history. The aim of this publication is to get more people discussing and researching the origins of computing technology in general, and provide somewhere to chorinicle that research.
                 </p>
 
                 <h3>Who is NoCH for?</h3>
@@ -71,19 +121,45 @@
 
                     </br></br>
 
-                    We are open to tall kinds of voices here, from expert to novice and everywhere in between. In general NoCH is going for a feel somewhere between pop history and academic journal. A good submission will be fun, accessible, and come with citations (if applicable).
+                    We are open to all kinds of voices here, from expert to novice and everywhere in between. In general NoCH is going for a feel somewhere between pop history and academic journal. A good submission will be fun, accessible, and come with citations (if applicable).
                 </p>
             
-                <h3>How do you submit?</h3>
+                <h3 id="submit">How do you submit?</h3>
                 <p>
-                    Easy: send us your article! If your submission is accepted for publication then one of our editors will be in touch.
+                    We are currently accepting articles by email(<a href="mailto:adventofcomputing@gmail.com">adventofcomputing@gmail.com</a>). Please send submit either RTF files or raw text, and include any images as seperate attatchments. If your submission is accepted for publication then one of our editors will be in touch.
+                </p>
+
+                <h3>How do you get involved?</h3>
+                <p>
+                    Shoot us an email! We are currently looking for people who can help edit or typeset LaTeX. It would also be nice to have someone on the team who's good at graphic design.
                 </p>
 
                 <h3>How does licensing work?</h3>
                 <p>
-                    We are dedicated to open access around here. NoCH and articles published within are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Share Alike</a>. You are free to publish your articles outside of NoCH. We only ask that you don't publish your accepted submission outside NoCH until the issue in question is released.
+                    We are dedicated to open access around here. NoCH itself and all articles published within are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Share Alike</a>. You are free to publish your articles outside of NoCH. We only ask that you don't publish your accepted submission outside NoCH until the issue in question is released. We would like to get scoops when we can!
                 </p>
             </div>
+
+            <hr>
         </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <br/>
+                        Contact Us:
+                        <a href="mailto:adventofcomputing@gmail.com">adventofcomputing@gmail.com</a>
+                        <br/>
+                        <br/>
+                    </div>
+
+                    <div class="col-md-9">
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
